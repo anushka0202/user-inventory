@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.header {
+  flex-shrink: 0;
+  background-color: rgba(30, 30, 30, 0.88);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: #fff;
+  display: flex;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1%;
+}
+
+.header-image {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin: 1%;
+}
+
+.add-user-conatiner {
+  flex-shrink: 0;
+  /* padding: 1.5%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-user-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1%;
+}
+
+.add-user-button {
+  width: 150px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: #1677ff;
+  margin: 1.5%;
+}
+
+.users-constainer {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userList {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.user {
+  width: 400px;
+  margin: 40px;
+  padding: 1%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fcfcfc;
+  box-shadow: 2px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 1300px) {
+  .userList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .userList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .userList {
+    width: 100%;
+  }
+
+  .user {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.field {
+  width: 50%;
+}
+
+.username {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.user-details {
+  color: #000;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.delete-button {
+  width: 97px;
+  border-radius: 5px;
+  background: #f64f2a;
+  border: none;
+  color: #fff;
+  padding: 1.5%;
+  margin: 1.5%;
+}
+
+.edit-button {
+  width: 97px;
+  border-radius: 5px;
+  background: #1677ff;
+  border: none;
+  color: #fff;
+  padding: 1.5%;
+  margin: 1.5%;
+}
+
+.add-user-modal {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  padding: 2%;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.pagination button.active {
+  background-color: #d5caca6f;
+  font-weight: bold;
+  border: #000;
+  border-width: 2px;
+}
+
+.pagination button.prev-arrow::before {
+  content: "\2190"; /* Unicode arrow left character */
+  margin-right: 5px;
+}
+
+.pagination button.next-arrow::after {
+  content: "\2192"; /* Unicode arrow right character */
+  margin-left: 5px;
+}
